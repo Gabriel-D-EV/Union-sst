@@ -82,11 +82,10 @@ i:hover {
     width: 8px;
     border-radius: 20px;
 }
-.sobre {
+.main {
     width: 85%;
     padding-top: 75px;
     margin: 0 auto;
-    height: 1200px;
 }
 header .newheader {
     background-color: var(--color-3);
@@ -97,9 +96,8 @@ header .newheader {
     display: none;
     cursor: pointer;
 }
-.mobile div{
-    background: #fff;
-    margin: 8px;
+.mobile i{
+    color: #fff;
 }
 @media (max-width: 900px) {
     body {
@@ -116,6 +114,7 @@ header .newheader {
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
+        transition: .3s all ease-in-out;
     }
     header .flex{
         background-color: var(--color-3);
@@ -134,9 +133,30 @@ header .newheader {
         top: 10px;
         right: 10px;
     }
+    #home {
+        background-image: url(../static/images/bg-mobile.png);
+    }
 }
 .nav-list.active {
     transform: translateX(0);
     opacity: 1;
-    
+}
+.sst {
+    padding: 30px 0;
+}
+.bg1 {
+    background-image: url(../static/images/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    background-attachment: fixed;  
+}
+.bg2 {
+    background-image: url(../static/images/10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    background-attachment: fixed;  
 }
