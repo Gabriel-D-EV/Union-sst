@@ -98,8 +98,6 @@ header .newheader {
     cursor: pointer;
 }
 .mobile div{
-    width: 30px;
-    height: 2px;
     background: #fff;
     margin: 8px;
 }
@@ -140,4 +138,5 @@ header .newheader {
 .nav-list.active {
     transform: translateX(0);
     opacity: 1;
+    
 }
