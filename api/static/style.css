@@ -13,7 +13,7 @@
 }
 html, body {
     height: 100%;
-    background-color: var(--color-4);
+    background-color: var(--color-1);
 }
 header .flex img {
     width: 50px;
@@ -72,6 +72,7 @@ i:hover {
     background-position: center;
     background-size: cover;
     height: 100%;
+    background-attachment: fixed;  
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -85,6 +86,7 @@ i:hover {
 .main {
     width: 85%;
     padding-top: 75px;
+    padding-bottom: 50px;
     margin: 0 auto;
 }
 header .newheader {
@@ -136,6 +138,12 @@ header .newheader {
     #home {
         background-image: url(../static/images/bg-mobile.png);
     }
+    .bg1 {
+        background-image: url(../static/images/2-mobile.png);
+    }
+    .bg2 {
+        background-image: url(../static/images/1-mobile.png);
+    }
 }
 .nav-list.active {
     transform: translateX(0);
@@ -144,8 +152,11 @@ header .newheader {
 .sst {
     padding: 30px 0;
 }
+.service {
+    padding: 30px 0;
+}
 .bg1 {
-    background-image: url(../static/images/2.jpg);
+    background-image: url(../static/images/2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,10 +164,14 @@ header .newheader {
     background-attachment: fixed;  
 }
 .bg2 {
-    background-image: url(../static/images/10.jpg);
+    background-image: url(../static/images/8.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 40%;
     background-attachment: fixed;  
+}
+#sst {
+    background-color: var(--color-1);
+    
 }
