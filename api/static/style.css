@@ -175,3 +175,21 @@ header .newheader {
     background-color: var(--color-1);
     
 }
+.carrossel {
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    overflow: hidden;
+    height: 500px;
+    width: 1200px;
+}
+.container {
+    display: flex;
+    transition: transform .5s ease-in-out;
+    transform: translateX(0);
+}
+img {
+    object-fit: cover;
+    height: 500px;
+    width: 1200px;
+}

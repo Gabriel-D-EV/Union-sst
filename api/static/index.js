@@ -16,3 +16,20 @@ navlink.addEventListener("click", () => {
         nav.classList.remove("active");
     } else { nav.classList.add("active"); }
 })
+
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let idx = 0
+
+function carroseel() {
+    idx++;
+
+    if (idx > img.length - 1) {
+        idx = 0;
+    }
+
+    imgs.style.transform = `translateX(${-idx * 1200}px)`
+}
+
+setInterval(carroseel, 2000);
