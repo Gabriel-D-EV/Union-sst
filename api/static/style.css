@@ -113,11 +113,11 @@ p {
     border-radius: 20px;
 }
 .main {
-    width: 85%;
+    width: 80%;
     padding-top: 75px;
     padding-bottom: 50px;
     margin: 40px auto;
-    padding: 20px 40px;
+    padding: 5px 20px;
     border-radius: 20px;
     background-color: #d4d4d494;
     box-shadow: 5px 5px 10px #00000086;
