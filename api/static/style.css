@@ -71,6 +71,10 @@ h1, h2, h3 {
     font-size: 26px;
     font-weight: 600;
 }
+#servicos h1{
+    padding-top: 70px;
+    text-align: center;
+}
 p {
     font-size: 18px;
     color: #000;
@@ -78,6 +82,7 @@ p {
     letter-spacing: 1px;
     word-spacing: 3px;
     line-height: 30px;
+    text-indent: 20px;
 }
 #home {
     background-image: url(../static/images/bg1.png);
@@ -121,7 +126,21 @@ p {
     border-radius: 20px;
     background-color: #d4d4d494;
     box-shadow: 5px 5px 10px #00000086;
+}
+.flexcard {
+    display: flex;
+    flex-wrap: wrap;
     
+}
+ #servicos .card {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: #d4d4d494;
+    box-shadow: 5px 5px 10px #00000086;
 }
 span{
     color: var(--color-3);
@@ -185,6 +204,9 @@ header .newheader {
     }
     #carrossel {
         display: none;
+    }
+    #servicos .card {
+        width: 330px;
     }
 }
 .nav-list.active {
