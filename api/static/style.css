@@ -1,5 +1,5 @@
 :root {
-    --color-1: #01aae3;
+    --color-1: #9ed2e4;
     --color-2: #016fb0;
     --color-3: #004db4;
     --color-4: #999999;
@@ -8,7 +8,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter;
     color: #fff;
 }
 html, body {
@@ -66,6 +66,19 @@ i:hover {
     color: var(--color-5);
 
 }
+h1, h2, h3 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 600;
+}
+p {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 30px;
+}
 #home {
     background-image: url(../static/images/bg1.png);
     background-repeat: no-repeat;
@@ -95,7 +108,7 @@ i:hover {
     color: var(--color-4);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-2);
+    background-color: var(--color-3);
     width: 8px;
     border-radius: 20px;
 }
@@ -103,7 +116,17 @@ i:hover {
     width: 85%;
     padding-top: 75px;
     padding-bottom: 50px;
-    margin: 0 auto;
+    margin: 40px auto;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: #d4d4d494;
+    box-shadow: 5px 5px 10px #00000086;
+    
+}
+span{
+    color: var(--color-3);
+    font-size: 2.2rem;
+    font-weight: 600;
 }
 header .newheader {
     background-color: var(--color-3);
@@ -174,10 +197,6 @@ header .newheader {
 .service {
     padding: 30px 0;
 }
-#sst {
-    background-color: var(--color-1);
-    
-}
 .carrossel {
     align-items: center;
     margin: auto;
@@ -185,11 +204,12 @@ header .newheader {
     overflow: hidden;
     height: 500px;
     width: 1200px;
+    padding-bottom: 40px;
 }
 .container {
     display: flex;
     transition: transform .5s ease-in-out;
-    transform: translateX(0);
+    transform: translateX(0); 
 }
 img {
     object-fit: cover;
