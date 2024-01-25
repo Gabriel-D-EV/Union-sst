@@ -91,21 +91,22 @@ p {
     background-size: cover;
     height: 100%;
     background-attachment: fixed;  
+    padding-bottom: 50px;
 }
 .bg1 {
     background-image: url(../static/images/2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40%;
+    height: 50%;
     background-attachment: fixed;  
 }
 .bg2 {
-    background-image: url(../static/images/8.jpg);
+    background-image: url(../static/images/3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40%;
+    height: 50%;
     background-attachment: fixed;  
 }
 ::-webkit-scrollbar {
@@ -240,4 +241,7 @@ img {
 }
 #sobre .insta-sobre {
     color: var(--color-3);
+}
+#sobre {
+    padding-top: 55px;
 }
