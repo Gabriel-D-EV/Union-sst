@@ -32,4 +32,4 @@ function carroseel() {
     imgs.style.transform = `translateX(${-idx * 1200}px)`
 }
 
-setInterval(carroseel, 2000);
+setInterval(carroseel, 3000);
