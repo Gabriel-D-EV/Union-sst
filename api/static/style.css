@@ -238,3 +238,6 @@ img {
     height: 500px;
     width: 1200px;
 }
+#sobre .insta-sobre {
+    color: var(--color-3);
+}
