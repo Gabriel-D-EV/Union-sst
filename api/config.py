@@ -1,3 +1,3 @@
-email = "gbh.developer@gmail.com",
+email = "gbh.developer@gmail.com"
     
 senha = "akhy miqh qtpi qbxt"

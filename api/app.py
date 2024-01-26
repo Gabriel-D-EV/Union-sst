@@ -12,7 +12,7 @@ mail_config = {
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
     "MAIL_USERNAME": email,
-    "MAIL_PASSWORD": senha
+    "MAIL_PASSWORD": senha,
 }
 
 app.config.update(mail_config)
@@ -33,8 +33,8 @@ ano = hj.year
 def index():
     return render_template('index.html', ano=ano)
 
-@app.route('/enviar', method=['GET', 'POST'])
-def enviar():
+@app.route('/send', methods=['GET', 'POST'])
+def send():
     if request.method == 'POST':
         formContato = Contato(
             request.form["nome"],
@@ -44,25 +44,25 @@ def enviar():
         
         msg = Message(
             subject= f'Cliente {formContato.nome} te enviou uma mensagem do Union.sst',
-            sender=app.config.get(MAIL_USERNAME),
-            recipients= ['gabriel.silva_dev@outlook.com'],
+            sender=email,
+            recipients= ['gabriel.silva_dev@outlook.com', 'Unionsst@gmail.com', 'pedroraphbass@gmail.com'],
             body= f'''
             
-            Assunto: Solicitação do Cliente
+                Assunto: Solicitação do Cliente
 
-            Olá, 
+                Olá, 
 
-            Recebi uma mensagem de cliente. Aqui estão os detalhes:
+                Recebi uma mensagem de cliente. Aqui estão os detalhes:
 
-            Nome: {formContato.nome}
-            Email: {formContato.email}
+                Nome: {formContato.nome}
+                Email: {formContato.email}
 
-            Mensagem:
-            {formContato.mensagem}
+                Mensagem:
+                {formContato.mensagem}
 
-            Atenciosamente,
-            Admin
-            '''
+                Atenciosamente,
+                Admin
+                '''
         )
         
         mail.send(msg)

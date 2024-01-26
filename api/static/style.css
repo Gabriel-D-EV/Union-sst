@@ -297,6 +297,10 @@ img {
     height: 500px;
     box-shadow:  5px 5px 10px #000000a1;
     padding: 20px 0;
+    color: #000;
+}
+.contato form textarea {
+    color: #000;
 }
 .contato button {
     background-color: var(--color-5);
@@ -316,8 +320,9 @@ img {
 }
 .contato .form-control {
     width: 80%;
-    border-radius: 10px;
+    border-radius: 3px;
     border: none;
+    font-size: 16px;
 }
 #nome, #email {
     height: 35px;
