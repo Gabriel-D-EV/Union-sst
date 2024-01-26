@@ -300,6 +300,7 @@ img {
     padding-top: 70px;
 }
 #contato {
+    margin-top: 220px;
     padding: 60px 0;
     background-color: var(--color-1);
 }
@@ -365,4 +366,26 @@ img {
     height: 40%;
     border-radius: 50%;
     box-shadow:  5px 5px 15px #000000a1;
+}
+.bait {
+    height: 60%;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+}
+.bait h4 {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 60px;
+    
+}
+.bait h4 span{
+    color: var(--color-2);
+    font-weight: bolder;
+    font-size: 45px;
 }
