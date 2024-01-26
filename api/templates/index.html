@@ -27,16 +27,12 @@
                     <li><a href="#home">home</a></li>
                     <li><a href="#sobre">sobre</a></li>
                     <li><a href="#servicos">serviços</a></li>
-                    <li><a href="#">contato</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </nav>   
         </div>
    </header>
-
-   <div class="home col-md-12" id="home">
-
-   </div>
-
+   <div class="home col-md-12" id="home"></div>
    <div class="col-md-12 main" id="sobre">
         <h1>Sobre a <span>UNION</span></h1>
         <br>
@@ -126,7 +122,26 @@
         <img src="../static/images/c4.png" alt="">
     </div>
    </div>
-
+   <div class="col-md main" id="contato">
+    <h1><span>Contato</span></h1>
+    <form class="row g-3" action="/send" method="POST">
+        <div class="col-md-6">
+          <label for="inputName" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">E-Mail</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Mensagem</label>
+          <textarea type="text" class="form-control" id="mensagem" placeholder="Digite sua mensagem" rows="10" name="mensagem" required></textarea>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+        </div>
+      </form>
+   </div>
 
 
     <script src="../static/bootstrap/js/bootstrap.min.js"></script>
