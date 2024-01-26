@@ -10,6 +10,7 @@
     margin: 0;
     font-family: Inter;
     color: #fff;
+    box-sizing: border-box;
 }
 html, body {
     height: 100%;
@@ -100,6 +101,7 @@ p {
     height: 100%;
     background-attachment: fixed;  
     padding-bottom: 50px;
+    width: auto;
 }
 .bg1 {
     background-image: url(../static/images/2.png);
@@ -108,6 +110,7 @@ p {
     background-size: cover;
     height: 50%;
     background-attachment: fixed;  
+    width: auto;
 }
 .bg2 {
     background-image: url(../static/images/3.png);
@@ -115,7 +118,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 50%;
-    background-attachment: fixed;  
+    background-attachment: fixed; 
+    width: auto; 
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -139,17 +143,24 @@ p {
 .flexcard {
     display: flex;
     flex-wrap: wrap;
-    
+    background-image: url(../static/images/bg3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    background-attachment: fixed;  
 }
  #servicos .card {
-    width: 40%;
+    width: 29%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 20px;
     margin: 50px auto;
     border-radius: 20px;
-    background-color: #d4d4d494;
-    box-shadow: 5px 5px 10px #00000086;
+    background-color: #d4d4d4b6;
+    box-shadow: 5px 5px 10px #0000009a;
 }
 span{
     color: var(--color-3);
@@ -172,6 +183,10 @@ header .newheader {
 @media (max-width: 998px) {
     body {
         overflow-x: hidden;
+        overflow: auto;
+    }
+    header .newheader{
+        position: fixed;
     }
     .nav-list {
         position: absolute;
@@ -220,7 +235,10 @@ header .newheader {
     }
     #contato .contato form {
         margin-top: 20px;
-        width: 300px;
+        width: 330px;
+    }
+    .main {
+        width: 95%;
     }
 }
 .nav-list.active {
@@ -231,10 +249,23 @@ header .newheader {
     padding: 30px 0;
 }
 .service {
-    padding: 30px 0;
+    padding: 50px 0;
+    text-align: center;
 }
 .service h3 {
     text-align: center;
+}
+#servicos .flexcard .service a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition:.2s all ease-in-out;
+    background-color: var(--color-3);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+#servicos .flexcard .service a:hover {
+    transform: scale(1.1);
 }
 .carrossel {
     align-items: center;
@@ -270,7 +301,7 @@ img {
 }
 #contato {
     padding: 60px 0;
-   background-color: var(--color-1);
+    background-color: var(--color-1);
 }
 .contato {
     display: flex;
@@ -292,7 +323,7 @@ img {
     text-align: center;
     display: grid;
     grid-area: 10px;
-    width: 600px;
+    width: 500px;
     height: 500px;
     box-shadow:  5px 5px 10px #000000a1;
     padding: 20px 0;
@@ -332,4 +363,6 @@ img {
 .contato img {
     width: 40%;
     height: 40%;
+    border-radius: 50%;
+    box-shadow:  5px 5px 15px #000000a1;
 }
