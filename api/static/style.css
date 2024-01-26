@@ -257,3 +257,20 @@ img {
 #sst {
     padding-top: 70px;
 }
+#contato {
+    padding: 60px 0;
+    margin: 40px auto;
+}
+.contato {
+    display: flex;
+    justify-content: space-around;
+}
+.contato img {
+    width: 300px;
+    height: 300px;
+}
+#contato h1 {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
