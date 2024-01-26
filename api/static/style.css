@@ -15,6 +15,9 @@ html, body {
     height: 100%;
     background-color: var(--color-1);
 }
+body {
+    overflow-x: hidden;
+}
 header .flex img {
     width: 50px;
     height: 50px;
@@ -124,7 +127,7 @@ p {
     border-radius: 20px;
 }
 .main {
-    width: 80%;
+    width: 90%;
     padding-top: 75px;
     padding-bottom: 50px;
     margin: 40px auto;
@@ -166,10 +169,9 @@ header .newheader {
 .mobile i{
     color: #fff;
 }
-@media (max-width: 900px) {
+@media (max-width: 998px) {
     body {
         overflow-x: hidden;
-        margin: auto;
     }
     .nav-list {
         position: absolute;
@@ -214,11 +216,11 @@ header .newheader {
         display: none;
     }
     #servicos .card {
-        width: 320px;
+        width: 300px;
     }
     #contato .contato form {
         margin-top: 20px;
-        width: 320px;
+        width: 300px;
     }
 }
 .nav-list.active {
@@ -259,7 +261,7 @@ img {
 #sobre {
     padding-top: 70px;
 }
-#sobre h1 {
+#sobre h1 span{
     padding-bottom: 40px;
     text-align: center;
 }
@@ -268,16 +270,17 @@ img {
 }
 #contato {
     padding: 60px 0;
-    margin: 40px auto;
+    background-image: url(../static/images/bg3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
 }
 .contato {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-.contato img {
-    width: 300px;
-    height: 300px;
 }
 #contato h1 {
     padding-bottom: 40px;
@@ -312,7 +315,7 @@ img {
     font-weight: bolder;
 }
 .contato .form-control {
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
     border: none;
 }
