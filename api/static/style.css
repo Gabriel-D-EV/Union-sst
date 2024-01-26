@@ -2,7 +2,7 @@
     --color-1: #9ed2e4;
     --color-2: #016fb0;
     --color-3: #004db4;
-    --color-4: #999999;
+    --color-4: #9fb1c2;
     --color-5: #00a030;
 }
 * {
@@ -13,7 +13,7 @@
 }
 html, body {
     height: 100%;
-    background-color: var(--color-1);
+    background-color: var(--color-4);
 }
 body {
     overflow-x: hidden;
@@ -270,11 +270,7 @@ img {
 }
 #contato {
     padding: 60px 0;
-    background-image: url(../static/images/bg3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;  
+   background-color: var(--color-1);
 }
 .contato {
     display: flex;
@@ -285,6 +281,9 @@ img {
 #contato h1 {
     padding-bottom: 40px;
     text-align: center;
+}
+#contato h1 i {
+    color: var(--color-3);
 }
 .contato form {
     background-color: var(--color-2);
@@ -319,7 +318,7 @@ img {
     font-weight: bolder;
 }
 .contato .form-control {
-    width: 80%;
+    width: 90%;
     border-radius: 3px;
     border: none;
     font-size: 16px;
@@ -329,4 +328,8 @@ img {
   }
 #mensagem {
     height: 260px;
+}
+.contato img {
+    width: 40%;
+    height: 40%;
 }
