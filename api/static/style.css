@@ -57,15 +57,19 @@ a {
     color: var(--color-5);
     opacity: .7;
 }
+.nav-list li a:focus {
+    color: var(--color-5);
+    opacity: .7;
+}
 i {
     color: #fff;
-    font-size: 25px;
+    font-size: 30px;
     z-index: 3;
     cursor: pointer;
 }
 i:hover {
     color: var(--color-5);
-
+    transform: scale(1.1);
 }
 h1, h2, h3 {
     color: #000;
@@ -124,7 +128,7 @@ p {
     padding-top: 75px;
     padding-bottom: 50px;
     margin: 40px auto;
-    padding: 5px 20px;
+    padding: 5px 30px;
     border-radius: 20px;
     background-color: #d4d4d494;
     box-shadow: 5px 5px 10px #00000086;
@@ -165,6 +169,7 @@ header .newheader {
 @media (max-width: 900px) {
     body {
         overflow-x: hidden;
+        margin: auto;
     }
     .nav-list {
         position: absolute;
@@ -209,7 +214,11 @@ header .newheader {
         display: none;
     }
     #servicos .card {
-        width: 330px;
+        width: 320px;
+    }
+    #contato .contato form {
+        margin-top: 20px;
+        width: 320px;
     }
 }
 .nav-list.active {
@@ -263,7 +272,8 @@ img {
 }
 .contato {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .contato img {
     width: 300px;
@@ -273,4 +283,42 @@ img {
     padding-bottom: 40px;
     text-align: center;
 }
-
+.contato form {
+    background-color: var(--color-2);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-area: 10px;
+    width: 600px;
+    height: 500px;
+    box-shadow:  5px 5px 10px #000000a1;
+    padding: 20px 0;
+}
+.contato button {
+    background-color: var(--color-5);
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: 400;
+}
+.contato button:hover {
+    background-color: var(--color-3);
+    color: #fff;
+    transform: scale(1.12);
+    font-weight: bolder;
+}
+.contato .form-control {
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+}
+#nome, #email {
+    height: 35px;
+  }
+#mensagem {
+    height: 260px;
+}
