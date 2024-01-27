@@ -259,8 +259,15 @@
               required
             ></textarea>
           </div>
-          <div class="col-12 d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+          <div class="col-12 d-flex justify-content-center btn">
+            <button type="submit" class="btn btn-primary mt-4" id="btn-enviar">Enviar</button>
+
+            <button class="btn btn-primary" id="btn-load" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+              Enviando...
+            </button>
+          </div>
+          
           </div>
         </form>
       </div>
