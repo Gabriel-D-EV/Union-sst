@@ -98,7 +98,11 @@ p {
     height: 100%;
     background-attachment: fixed;  
     padding-bottom: 50px;
-    width: auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 20%;
 }
 .bg1 {
     background-image: url(../static/images/2.png);
@@ -178,7 +182,28 @@ header .newheader {
 .mobile i{
     color: #fff;
 }
-@media (max-width: 900px) {
+.home h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 10%;
+    line-height: 60px;
+}
+.home span {
+    color: var(--color-3);
+    font-weight: 600;
+    font-size: 5rem;
+}
+.home a {
+    font-size: 30px;
+    padding: 10px 30px;
+    border: 2px solid var(--color-3);
+}
+.home a:hover {
+    background-color: var(--color-3);
+    color: #fff;
+}
+@media (max-width: 920px) {
     body {
         overflow-x: hidden;
         overflow: auto;
@@ -199,6 +224,12 @@ header .newheader {
         justify-content: space-evenly;
         transform: translateX(100%);
         transition: .3s all ease-in-out;
+    }
+    .home h1 {
+        font-size: 2rem;
+    }
+    .home h1 span {
+        font-size: 3rem;
     }
     header .flex{
         background-color: var(--color-3);
