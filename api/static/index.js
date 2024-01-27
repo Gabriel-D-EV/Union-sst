@@ -33,3 +33,9 @@ function carroseel() {
 }
 
 setInterval(carroseel, 3000);
+
+const btnE = document.querySelector("#btn-enviar");
+
+btnE.addEventListener("click", () => {
+    btnE.style.background = "var(--color-3)";
+})
