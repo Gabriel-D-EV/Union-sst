@@ -45,7 +45,7 @@ def send():
         msg = Message(
             subject= f'Cliente {formContato.nome} te enviou uma mensagem do Union.sst',
             sender=email,
-            recipients= ['Unionsst@gmail.com', 'pedroraphbass@gmail.com'],
+            recipients= ['yyyyyyyyyy'],
             body= f'''
             
                 Assunto: Solicitação do Cliente
